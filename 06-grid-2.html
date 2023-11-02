@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-template: 100px auto 200px / 25% 50% 25%;
+            grid-gap: 20px 10px
+        }
+        .header{
+            background: lightgreen;
+            grid-column: 1 / span 3;
+        }
+        .left{
+            background: turquoise;
+        }
+        .right{
+            background: maroon;
+        }
+        .main{
+            min-height: 300px;
+        }
+        .footer{
+            background: tomato;
+            grid-column: 1 / 4;
+            grid-row-end: span 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+<header class="header">Header</header>
+<aside class="aside left">Menu</aside>
+<article class="main"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos obcaecati nesciunt a quos deleniti magnam, similique cum dolore distinctio aliquid facere facilis iure vitae ullam eveniet, soluta, earum architecto iusto.
+Adipisci corrupti libero quam fugiat exercitationem molestias expedita fuga, esse mollitia velit, animi quos, vitae laborum. Enim, reprehenderit id. Asperiores adipisci repellendus minima, eius beatae modi quos nam mollitia corporis?
+Cupiditate eaque esse aperiam adipisci quaerat perspiciatis est cum minus consequuntur facere ex, iste illo ipsa pariatur illum neque iure nihil! Repellat culpa ad quidem cum eius, labore quisquam sint.</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quaerat maiores, fugiat quibusdam dolorem doloribus ratione molestiae alias enim tenetur ducimus illo repellendus ipsum omnis! Inventore totam quibusdam tempora error?</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora maiores quod cum architecto ex quam voluptatibus voluptatum, accusantium veritatis explicabo est voluptates velit facere neque sequi hic eum, tempore quo.</p>
+</article>
+<aside class="aside right">Menu</aside>
+<footer class="footer">Footer</footer>
+</div>
+    
+</body>
+</html>
